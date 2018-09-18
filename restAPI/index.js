@@ -4,10 +4,9 @@
 class RestAPI{
 
   /**
-   * @param {String} url - API url
    * @param {Object} resources - API resources
    */
-  constructor(url, resources) {
+  constructor(resources) {
     this.resources = resources;
   }
 }
