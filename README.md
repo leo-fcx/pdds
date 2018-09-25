@@ -30,3 +30,10 @@ Easily to identify which resources/end-points school API has.  See [here](https:
 
 ### Logic and data together
 URL is specific to schoolAPI. See [here](https://github.com/leo-fcx/pdds/blob/master/index.js#L3)
+
+## Following items were improved
+
+* Code repetition:
+* Not giving meaningful names.
+* Not meaningful comments for variable and classes
+* Over-documentation

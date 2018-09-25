@@ -1,18 +1,20 @@
 /**
  * Rest API end point which allows to send allowed request to the an API resource.
  */
-class RestAPIEndPoint {
+class EndPoint {
 
   /**
-   * @param {String} path - URI for the end-point
+   * @param {String} path - for the end-point
    */
   constructor(path) {
     this.path = path;
   }
 
+  fetchAll() {
+    throw 'Not implemented';
+  }
+
   /**
-   * Returns all the objects or specific object if id was provided.
-   *
    * @param {String} id - Optional, UUID of the object to fetch
    */
   fetch(id = null) {
@@ -20,8 +22,6 @@ class RestAPIEndPoint {
   }
 
   /**
-   * Creates new object using data provided.
-   *
    * @param {Object} data - Object information
    */
   create(data) {
@@ -29,7 +29,6 @@ class RestAPIEndPoint {
   }
 
   /**
-   *
    * @param {String} id - UUID of the object to update
    */
   update(id){
@@ -37,8 +36,6 @@ class RestAPIEndPoint {
   }
 
   /**
-   * Deletes an object with the specified ID
-   *
    * @param {String} id - UUID of the object to update
    */
   remove(id){
@@ -46,4 +43,4 @@ class RestAPIEndPoint {
   }
 }
 
-export default RestAPIEndPoint;
+export default EndPoint;
